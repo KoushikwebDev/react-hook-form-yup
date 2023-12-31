@@ -13,7 +13,7 @@ const schema = yup.object().shape({
   password: yup.string().trim().required("password is required").min(6).max(8),
 });
 
-function page() {
+function Page() {
   const {
     handleSubmit,
     control,
@@ -74,4 +74,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

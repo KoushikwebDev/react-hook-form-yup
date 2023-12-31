@@ -32,7 +32,7 @@ const generateValues = () => {
   };
 };
 
-function page() {
+function Page() {
   const {
     handleSubmit,
     control,
@@ -177,4 +177,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
