@@ -4,6 +4,7 @@ import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import Link from "next/link";
 
 const schema = yup.object().shape({
   email: yup
@@ -70,6 +71,12 @@ function Page() {
           Submit
         </button>
       </form>
+
+      <div className="text-center mt-10">
+        <Link href="/multipleform" className="text-green-600">
+          Go to Multiple Form Page
+        </Link>
+      </div>
     </main>
   );
 }
